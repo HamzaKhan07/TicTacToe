@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="box">
+            <div class="mark"  onmouseover="showMove(event)" >  
+                    <img src="cross.svg" class="mark_img fadeOut" onclick="moveClicked(event,1)"> 
+            </div>
+            <div class="mark" onmouseover=showMove(event)>
+                    <img src="cross.svg" class="mark_img fadeOut" onclick="moveClicked(event,2)">    
+            </div>
+            <div class="mark" onmouseover=showMove(event)>
+                    <img src="cross.svg" class="mark_img fadeOut" onclick="moveClicked(event,3)">
+            </div>
+            <div class="mark" onmouseover=showMove(event)>
+                    <img src="cross.svg" class="mark_img fadeOut" onclick="moveClicked(event,4)">
+            </div>
+            <div class="mark" onmouseover=showMove(event)>
+                    <img src="cross.svg" class="mark_img fadeOut" onclick="moveClicked(event,5)">
+            </div>
+            <div class="mark" onmouseover=showMove(event)>
+                    <img src="cross.svg" class="mark_img fadeOut" onclick="moveClicked(event,6)">
+            </div>
+            <div class="mark" onmouseover=showMove(event)>
+                    <img src="cross.svg" class="mark_img fadeOut" onclick="moveClicked(event,7)">
+            </div>
+            <div class="mark" onmouseover=showMove(event)>
+                    <img src="cross.svg" class="mark_img fadeOut" onclick="moveClicked(event,8)">
+            </div>
+            <div class="mark" onmouseover=showMove(event)>
+                    <img src="cross.svg" class="mark_img fadeOut" onclick="moveClicked(event,9)">
+            </div>
+        </div>
+    </div>
+
+    <div class="Xwin fadeOut">
+        <img src="cross.svg">
+        <h1>X Wins</h1>
+        <button onclick="refresh()">Play Again</button>  
+    </div>
+
+    <div class="Ywin fadeOut">
+        <img src="zero.svg">
+        <h1>O Wins</h1>
+        <button onclick="refresh()">Play Again</button>  
+    </div>
+
+    <div class="draw fadeOut">
+        <div class="draw-img">
+                <div class="xbox"><img src="cross.svg"></div>
+                <div class="ybox"><img src="zero.svg"></div>
+        </div>
+        <div class="draw-content">
+                <h1>Draw!</h1>
+        </div>
+        <div class="draw-button">
+                <button onclick="refresh()">Play Again</button> 
+        </div>
+    </div>
+
+    <div class="turn">
+            <p class="turn_p">Start Game!</p>
+    </div>
+
+    <div class="score-container">
+            <div class="Xscore">
+                <h1>X:</h1>
+                <h1 class="score_x">0</h1>
+            </div>
+            <div class="Yscore">
+                <h1>O:</h1>
+                <h1 class="score_y">0</h1>
+            </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
